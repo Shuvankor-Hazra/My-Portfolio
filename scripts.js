@@ -35,3 +35,13 @@ submitButton.addEventListener("submit", function (e) {
     sendDiv.innerText = "";
   }
 });
+
+// Preloader Area
+window.onload = function () {
+  const perloaderArea = document.getElementById("preloader-area");
+  perloaderArea.className = "page-loaded";
+
+  setTimeout(function () {
+    perloaderArea.style.display = "none";
+  }, 2000);
+};
