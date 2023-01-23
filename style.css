@@ -99,11 +99,11 @@ Hero Area CSS
 .hero-text a {
   background-color: #03419d;
   color: #fff;
-  padding: 5px 20px;
+  padding: 8px 20px;
   text-decoration: none;
-  border-radius: 20px;
+  border-radius: 10px;
   font-size: 16px;
-  font-weight: 900;
+  font-weight: 700;
   transition: 0.3s;
   display: inline-block;
   margin-top: 10px;
@@ -141,7 +141,7 @@ Service Area CSS
   line-height: 60px;
   text-align: center;
   border: 1px solid #999;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .service-area .single-service h3 {
   padding: 35px 0;
@@ -372,10 +372,11 @@ Footer Area CSS
     margin-bottom: 0;
   }
   .carousel-item a {
-    padding: 5px 10px;
+    padding: 5px 8px;
     border-radius: 10px;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 400;
+    margin-top: 10px;
   }
   .contact-area {
     padding: 50px 0px;
@@ -393,7 +394,10 @@ Footer Area CSS
     margin-bottom: 50px;
   }
   .contact-form button {
-    margin-top: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 400;
   }
   .form-heading h2,
   .icon-heading h2 {
@@ -423,6 +427,27 @@ Footer Area CSS
 }
 
 @media (max-width: 575px) {
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px 0;
+  }
+  .hero-text a {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .contact-form button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 400;
+  }
 }
 
 /* 
