@@ -106,6 +106,7 @@ Hero Area CSS
 }
 .hero-text p {
   font-size: 18px;
+  padding: 20px 0;
 }
 .hero-text a {
   background-color: #f75023;
@@ -152,6 +153,9 @@ Service Area CSS
   padding: 35px 0;
   border-bottom: 1px solid #1cbe59;
 }
+.service-area .single-service p {
+  padding: 25px 0;
+}
 
 /* 
 Project Area CSS
@@ -174,7 +178,7 @@ Project Area CSS
 .carousel-control-prev-icon {
   height: 3rem;
   background-color: #002440;
-  border-radius: 10%;
+  border-radius: 50%;
 }
 .carousel-item a {
   padding: 10px 20px;
