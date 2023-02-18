@@ -17,44 +17,45 @@ body {
   line-height: 1.7;
 }
 
-/* 
-Header Area CSS
-*/
-/* .header-area .navbar-brand::after {
-  position: absolute;
-  content: "";
-  width: 60px;
-  height: 40px;
-  background-color: #c12323;
-  display: flex;
-  left: 0;
-  top: 30px;
-  clip-path: polygon(
-    100% 0,
-    80% 50%,
-    100% 100%,
-    50% 80%,
-    0 100%,
-    20% 50%,
-    0 0,
-    50% 20%
-  );
-} */
+#theme-button {
+  background-color: #f75023;
+  color: #fff;
+  padding: 8px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.3s;
+  display: inline-block;
+  border: 1px solid #f75023;
+}
+#theme-button:hover {
+  background-color: transparent;
+}
+
+@media (max-width: 575px) {
+  #theme-button {
+    padding: 5px 20px;
+    font-size: 10px;
+    font-weight: 500;
+  }
+}
+
+/* Header Area CSS */
 .header-area .navbar-brand {
   padding: 0;
   font-size: 18px;
   font-weight: 800;
-  color: #fff;
+  color: #1cbe59;
   text-transform: uppercase;
-  text-decoration: underline;
 }
 .header-area .navbar-brand span {
   font-size: 52px;
   text-transform: math-auto;
-  color: #78926c;
+  color: #f75023;
 }
 .header-area .nav-item {
-  margin-left: 80px;
+  margin-left: 50px;
 }
 .header-area .nav-item a {
   font-size: 16px;
@@ -65,9 +66,11 @@ Header Area CSS
   color: #fff;
   transition: 0.3s;
 }
+.header-area ul li:last-child {
+  padding-bottom: 10px;
+}
 .header-area .nav-link:hover {
-  color: #a8a6a6;
-  text-decoration: underline;
+  color: #f75023;
 }
 .header-area .navbar-toggler {
   border: none;
@@ -83,37 +86,39 @@ Hero Area CSS
 }
 .hero-text h5 {
   text-transform: uppercase;
-  color: #fff;
+  color: #f75023;
   font-size: 16px;
   font-weight: 800;
 }
 .hero-text h1 {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 800;
   padding: 10px 0;
+  margin-bottom: 0;
+}
+.hero-text h3 {
+  font-size: 24px;
+  padding: 10px 0;
+  text-transform: capitalize;
+}
+.hero-text h3 span {
+  color: #1cbe59;
 }
 .hero-text p {
-  font-size: 14px;
-  opacity: 0.6;
+  font-size: 18px;
 }
 .hero-text a {
-  background-color: #03419d;
+  background-color: #f75023;
   color: #fff;
   padding: 8px 20px;
-  text-decoration: none;
-  border-radius: 10px;
   font-size: 16px;
   font-weight: 700;
-  transition: 0.3s;
-  display: inline-block;
   margin-top: 10px;
 }
-.hero-text a:hover {
-  background-color: #0c336e;
-}
 .hero-image img {
+  min-height: 80vh;
   border-radius: 20px;
-  border: 1px solid #fff;
+  border: 2px solid #1cbe59;
 }
 
 /* 
@@ -128,27 +133,24 @@ Service Area CSS
   font-weight: 700;
 }
 .service-area .single-service {
-  border: 1px solid #999;
+  border: 1px solid #1cbe59;
   padding: 40px 20px;
   border-radius: 10px;
 }
 .service-area .all-single-services i {
   font-size: 35px;
-  color: #fff;
+  color: #f75023;
   background-color: transparent;
   height: 60px;
   width: 60px;
   line-height: 60px;
   text-align: center;
-  border: 1px solid #999;
+  border: 1px solid #1cbe59;
   border-radius: 5px;
 }
 .service-area .single-service h3 {
   padding: 35px 0;
-  border-bottom: 1px solid #999;
-}
-.service-area .single-service p {
-  opacity: 0.6;
+  border-bottom: 1px solid #1cbe59;
 }
 
 /* 
@@ -163,38 +165,30 @@ Project Area CSS
   font-size: 40px;
   font-weight: 700;
 }
-.project-area .all-project {
-  border: 1px solid #999;
+.project-area .carousel-inner {
+  border: 2px solid #002440;
   border-radius: 10px;
   background-color: transparent;
 }
-.carousel-caption {
-  opacity: 0;
-  transition: 0.3s;
-}
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
-  width: 1rem;
-  background-color: #0d6efd;
+  height: 3rem;
+  background-color: #002440;
   border-radius: 10%;
-}
-.carousel-caption:hover {
-  opacity: 2;
 }
 .carousel-item a {
   padding: 10px 20px;
   text-decoration: none;
   color: #fff;
-  background-color: #0d6efd;
+  background-color: #f75023;
   border-radius: 5px;
   font-size: 16px;
   font-weight: 900;
   display: inline-block;
-  margin-top: 10px;
-  transition: 0.4s;
+  transition: 0.3s;
 }
 .carousel-item a:hover {
-  background-color: #0c336e;
+  background-color: #002440;
 }
 
 /* 
@@ -213,7 +207,7 @@ Contact Area CSS
   font-size: 25px;
 }
 .contact-form {
-  border: 1px solid #999;
+  border: 1px solid #1cbe59;
   padding: 40px;
   border-radius: 10px;
 }
@@ -239,15 +233,10 @@ div#error-text {
   margin: 10px 0;
 }
 .contact-form button {
-  background-color: #0d6efd;
   padding: 10px 20px;
-  text-decoration: none;
-  color: #fff;
   border-radius: 5px;
   font-size: 16px;
   font-weight: 900;
-  transition: 0.3s;
-  display: inline-block;
   margin-top: 10px;
 }
 .contact-area .contact-form h2 {
@@ -260,7 +249,7 @@ div#error-text {
   margin-bottom: 35px;
 }
 .contact-icons {
-  border: 1px solid #fff;
+  border: 1px solid #1cbe59;
   padding: 40px;
   border-radius: 10px;
 }
@@ -281,11 +270,11 @@ div#error-text {
   font-size: 20px;
   color: #fff;
   border-radius: 20px;
-  background-color: #03419d;
+  background-color: #f75023;
   transition: 0.3s;
 }
 .contact-icons ul li i:hover {
-  background-color: #0c336e;
+  background-color: transparent;
 }
 .contact-icons ul li a {
   text-decoration: none;
@@ -303,7 +292,7 @@ Footer Area CSS
 }
 .footer-area p {
   margin-bottom: 0;
-  color: darkgrey;
+  color: fff;
 }
 
 @media (max-width: 991px) {
@@ -359,6 +348,7 @@ Footer Area CSS
   }
   .project-area {
     padding: 50px 10px;
+    position: relative;
   }
   .project-area .project-heading h1 {
     margin-bottom: 50px;
@@ -368,15 +358,22 @@ Footer Area CSS
   .p-5 {
     padding: 0.5rem !important;
   }
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    width: 1rem;
+    background-color: #002440;
+    border-radius: 50%;
+  }
   .carousel-indicators {
     margin-bottom: 0;
   }
   .carousel-item a {
     padding: 5px 8px;
-    border-radius: 10px;
-    font-size: 10px;
+    font-size: 6px;
     font-weight: 400;
-    margin-top: 10px;
+    position: absolute;
+    top: 25px;
+    right: 65px;
   }
   .contact-area {
     padding: 50px 0px;
@@ -391,7 +388,7 @@ Footer Area CSS
   }
   .contact-form {
     padding: 35px 25px;
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
   .contact-form button {
     padding: 10px 20px;
@@ -404,8 +401,8 @@ Footer Area CSS
     font-size: 20px;
   }
   .contact-icons {
-    margin-bottom: 0;
     padding-bottom: 0;
+    margin-bottom: 50px;
   }
   .contact-icons ul li a {
     font-size: 12px;
@@ -442,6 +439,12 @@ Footer Area CSS
     font-size: 12px;
     font-weight: 700;
   }
+  .service-area .all-single-services i {
+    font-size: 25px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+  }
   .contact-form button {
     padding: 5px 10px;
     border-radius: 5px;
@@ -472,7 +475,7 @@ Preloader Area CSS
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: -1;
-  transition: 2s ease-in-out;
+  transition: 0.8s ease-in-out;
 }
 #preloader-area::before {
   left: 0;
