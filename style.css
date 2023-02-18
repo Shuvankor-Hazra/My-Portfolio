@@ -332,6 +332,7 @@ Footer Area CSS
     font-size: 12px;
   }
 
+  /* Service Area CSS */
   .service-area {
     padding: 50px 10px;
   }
@@ -350,9 +351,10 @@ Footer Area CSS
   .service-area .all-single-services i {
     font-size: 40px;
   }
+
+  /* Project Area CSS */
   .project-area {
     padding: 50px 10px;
-    position: relative;
   }
   .project-area .project-heading h1 {
     margin-bottom: 50px;
@@ -375,9 +377,6 @@ Footer Area CSS
     padding: 5px 8px;
     font-size: 6px;
     font-weight: 400;
-    position: absolute;
-    top: 25px;
-    right: 65px;
   }
   .contact-area {
     padding: 50px 0px;
